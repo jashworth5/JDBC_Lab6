@@ -96,7 +96,7 @@ public class DatabaseApp {
             int choice = Integer.parseInt(scanner.nextLine());
             return choice;
         } catch (NumberFormatException e) {
-            return -1; // Invalid choice
+            return -1; 
         }
     }
 

@@ -5,9 +5,7 @@ import java.util.List;
 public class ArcadeGamesDAL {
     private DataManager dataManager;
     
-    /**
-     * Constructor that initializes the DataManager.
-     */
+
     public ArcadeGamesDAL() {
         this.dataManager = new DataManager();
     }

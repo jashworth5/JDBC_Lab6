@@ -7,9 +7,7 @@ import java.util.List;
 public class MealPlanningDAL {
     private DataManager dataManager;
     
-    /**
-     * Constructor that initializes the DataManager.
-     */
+
     public MealPlanningDAL() {
         this.dataManager = new DataManager();
     }
@@ -45,7 +43,6 @@ public class MealPlanningDAL {
                 recipes.add(new Recipe(recipeName, cookbookName, totalServings, isBook, website));
             }
             
-            // Close resources
             results.close();
             statement.close();
             connection.close();
@@ -86,7 +83,6 @@ public class MealPlanningDAL {
                 recipes.add(new Recipe(recipeName, cookbookName, totalServings, isBook, website));
             }
             
-            // Close resources
             results.close();
             callableStatement.close();
             connection.close();
@@ -127,7 +123,6 @@ public class MealPlanningDAL {
             
             callableStatement.execute();
             
-            // Close resources
             callableStatement.close();
             connection.close();
             
